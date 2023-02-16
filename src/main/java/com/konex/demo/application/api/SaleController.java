@@ -54,13 +54,4 @@ public class SaleController {
     return new ResponseEntity<Map<String, Object>>(responseMessage, HttpStatus.CREATED);
   }
 
-  //para pruebas
-  @GetMapping("/hola")
-  public ResponseEntity<String> hola() {
-
-    var responseObject = generateNewSaleUseCase.execute(SaleRequest.builder().build());
-
-    return new ResponseEntity<>("hola", HttpStatus.OK);
-
-  }
 }
